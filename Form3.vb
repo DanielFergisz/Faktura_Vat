@@ -84,4 +84,8 @@
     Private Sub Nazwa_usługi_TextChanged(sender As Object, e As EventArgs) Handles Nazwa_usługi.TextChanged
         Nazwa_usługi.BackColor = Color.White
     End Sub
+
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

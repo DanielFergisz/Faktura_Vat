@@ -26,10 +26,6 @@ Partial Class Form1
         Me.Edytuj = New System.Windows.Forms.Button()
         Me.Drukuj = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Korekta = New System.Windows.Forms.Button()
-        Me.Usun = New System.Windows.Forms.Button()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Ustawienia = New System.Windows.Forms.Button()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,6 +33,10 @@ Partial Class Form1
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Korekta = New System.Windows.Forms.Button()
+        Me.Usun = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.Ustawienia = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -80,36 +80,6 @@ Partial Class Form1
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(741, 364)
         Me.DataGridView1.TabIndex = 3
-        '
-        'Korekta
-        '
-        Me.Korekta.Enabled = False
-        Me.Korekta.Location = New System.Drawing.Point(231, 12)
-        Me.Korekta.Name = "Korekta"
-        Me.Korekta.Size = New System.Drawing.Size(104, 32)
-        Me.Korekta.TabIndex = 4
-        Me.Korekta.Text = "Korekta"
-        Me.Korekta.UseVisualStyleBackColor = True
-        '
-        'Usun
-        '
-        Me.Usun.Enabled = False
-        Me.Usun.Location = New System.Drawing.Point(340, 12)
-        Me.Usun.Name = "Usun"
-        Me.Usun.Size = New System.Drawing.Size(104, 32)
-        Me.Usun.TabIndex = 5
-        Me.Usun.Text = "Usuń"
-        Me.Usun.UseVisualStyleBackColor = True
-        '
-        'Ustawienia
-        '
-        Me.Ustawienia.Location = New System.Drawing.Point(650, 10)
-        Me.Ustawienia.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Ustawienia.Name = "Ustawienia"
-        Me.Ustawienia.Size = New System.Drawing.Size(104, 32)
-        Me.Ustawienia.TabIndex = 6
-        Me.Ustawienia.Text = "Ustawienia"
-        Me.Ustawienia.UseVisualStyleBackColor = True
         '
         'Column2
         '
@@ -160,11 +130,42 @@ Partial Class Form1
         Me.Column7.Name = "Column7"
         Me.Column7.Width = 95
         '
+        'Korekta
+        '
+        Me.Korekta.Enabled = False
+        Me.Korekta.Location = New System.Drawing.Point(231, 12)
+        Me.Korekta.Name = "Korekta"
+        Me.Korekta.Size = New System.Drawing.Size(104, 32)
+        Me.Korekta.TabIndex = 4
+        Me.Korekta.Text = "Korekta"
+        Me.Korekta.UseVisualStyleBackColor = True
+        '
+        'Usun
+        '
+        Me.Usun.Enabled = False
+        Me.Usun.Location = New System.Drawing.Point(340, 12)
+        Me.Usun.Name = "Usun"
+        Me.Usun.Size = New System.Drawing.Size(104, 32)
+        Me.Usun.TabIndex = 5
+        Me.Usun.Text = "Usuń"
+        Me.Usun.UseVisualStyleBackColor = True
+        '
+        'Ustawienia
+        '
+        Me.Ustawienia.Location = New System.Drawing.Point(650, 10)
+        Me.Ustawienia.Margin = New System.Windows.Forms.Padding(2)
+        Me.Ustawienia.Name = "Ustawienia"
+        Me.Ustawienia.Size = New System.Drawing.Size(104, 32)
+        Me.Ustawienia.TabIndex = 6
+        Me.Ustawienia.Text = "Ustawienia"
+        Me.Ustawienia.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(765, 450)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(765, 423)
         Me.Controls.Add(Me.Ustawienia)
         Me.Controls.Add(Me.Usun)
         Me.Controls.Add(Me.Korekta)
@@ -172,6 +173,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Drukuj)
         Me.Controls.Add(Me.Edytuj)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Faktura_Vat v1.00"
