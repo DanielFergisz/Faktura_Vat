@@ -31,6 +31,8 @@ Partial Class Form4
         Me.FV = New System.Windows.Forms.CheckBox()
         Me.Zamknij_U = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.nr_Rach_S = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -56,7 +58,7 @@ Partial Class Form4
         Me.GroupBox1.Controls.Add(Me.FV)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(158, 189)
+        Me.GroupBox1.Size = New System.Drawing.Size(158, 199)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Rodzaj dokumentu"
@@ -64,7 +66,7 @@ Partial Class Form4
         'FD
         '
         Me.FD.AutoSize = True
-        Me.FD.Location = New System.Drawing.Point(16, 144)
+        Me.FD.Location = New System.Drawing.Point(16, 149)
         Me.FD.Name = "FD"
         Me.FD.Size = New System.Drawing.Size(115, 17)
         Me.FD.TabIndex = 5
@@ -74,7 +76,7 @@ Partial Class Form4
         'FZ
         '
         Me.FZ.AutoSize = True
-        Me.FZ.Location = New System.Drawing.Point(16, 121)
+        Me.FZ.Location = New System.Drawing.Point(16, 126)
         Me.FZ.Name = "FZ"
         Me.FZ.Size = New System.Drawing.Size(106, 17)
         Me.FZ.TabIndex = 4
@@ -84,7 +86,7 @@ Partial Class Form4
         'KF
         '
         Me.KF.AutoSize = True
-        Me.KF.Location = New System.Drawing.Point(16, 98)
+        Me.KF.Location = New System.Drawing.Point(16, 103)
         Me.KF.Name = "KF"
         Me.KF.Size = New System.Drawing.Size(101, 17)
         Me.KF.TabIndex = 3
@@ -94,7 +96,7 @@ Partial Class Form4
         'FVM
         '
         Me.FVM.AutoSize = True
-        Me.FVM.Location = New System.Drawing.Point(16, 75)
+        Me.FVM.Location = New System.Drawing.Point(16, 80)
         Me.FVM.Name = "FVM"
         Me.FVM.Size = New System.Drawing.Size(118, 17)
         Me.FVM.TabIndex = 2
@@ -104,7 +106,7 @@ Partial Class Form4
         'Par
         '
         Me.Par.AutoSize = True
-        Me.Par.Location = New System.Drawing.Point(16, 52)
+        Me.Par.Location = New System.Drawing.Point(16, 57)
         Me.Par.Name = "Par"
         Me.Par.Size = New System.Drawing.Size(66, 17)
         Me.Par.TabIndex = 1
@@ -115,7 +117,7 @@ Partial Class Form4
         '
         Me.FV.AutoSize = True
         Me.FV.Enabled = False
-        Me.FV.Location = New System.Drawing.Point(16, 29)
+        Me.FV.Location = New System.Drawing.Point(16, 34)
         Me.FV.Name = "FV"
         Me.FV.Size = New System.Drawing.Size(86, 17)
         Me.FV.TabIndex = 0
@@ -133,6 +135,8 @@ Partial Class Form4
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.nr_Rach_S)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -146,15 +150,32 @@ Partial Class Form4
         Me.GroupBox2.Controls.Add(Me.Nazwa_S)
         Me.GroupBox2.Location = New System.Drawing.Point(176, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(353, 189)
+        Me.GroupBox2.Size = New System.Drawing.Size(353, 199)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Dane sprzedawcy"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(23, 175)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(89, 13)
+        Me.Label6.TabIndex = 12
+        Me.Label6.Text = "Numer rachunku:"
+        '
+        'nr_Rach_S
+        '
+        Me.nr_Rach_S.Location = New System.Drawing.Point(118, 172)
+        Me.nr_Rach_S.MaxLength = 26
+        Me.nr_Rach_S.Name = "nr_Rach_S"
+        Me.nr_Rach_S.Size = New System.Drawing.Size(229, 20)
+        Me.nr_Rach_S.TabIndex = 11
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(63, 157)
+        Me.Label5.Location = New System.Drawing.Point(63, 149)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(49, 13)
         Me.Label5.TabIndex = 10
@@ -163,7 +184,7 @@ Partial Class Form4
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(84, 131)
+        Me.Label4.Location = New System.Drawing.Point(84, 123)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(28, 13)
         Me.Label4.TabIndex = 9
@@ -172,7 +193,7 @@ Partial Class Form4
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 105)
+        Me.Label3.Location = New System.Drawing.Point(11, 97)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(101, 26)
         Me.Label3.TabIndex = 8
@@ -181,7 +202,7 @@ Partial Class Form4
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(75, 80)
+        Me.Label2.Location = New System.Drawing.Point(75, 72)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 13)
         Me.Label2.TabIndex = 7
@@ -190,7 +211,7 @@ Partial Class Form4
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(69, 43)
+        Me.Label1.Location = New System.Drawing.Point(69, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 6
@@ -198,7 +219,7 @@ Partial Class Form4
         '
         'Regon_S
         '
-        Me.Regon_S.Location = New System.Drawing.Point(118, 153)
+        Me.Regon_S.Location = New System.Drawing.Point(118, 146)
         Me.Regon_S.MaxLength = 9
         Me.Regon_S.Name = "Regon_S"
         Me.Regon_S.Size = New System.Drawing.Size(229, 20)
@@ -206,7 +227,7 @@ Partial Class Form4
         '
         'NIP_S
         '
-        Me.NIP_S.Location = New System.Drawing.Point(118, 127)
+        Me.NIP_S.Location = New System.Drawing.Point(118, 120)
         Me.NIP_S.MaxLength = 10
         Me.NIP_S.Name = "NIP_S"
         Me.NIP_S.Size = New System.Drawing.Size(229, 20)
@@ -214,14 +235,14 @@ Partial Class Form4
         '
         'Miejscowosc_S
         '
-        Me.Miejscowosc_S.Location = New System.Drawing.Point(193, 101)
+        Me.Miejscowosc_S.Location = New System.Drawing.Point(193, 94)
         Me.Miejscowosc_S.Name = "Miejscowosc_S"
         Me.Miejscowosc_S.Size = New System.Drawing.Size(154, 20)
         Me.Miejscowosc_S.TabIndex = 3
         '
         'Kod_S
         '
-        Me.Kod_S.Location = New System.Drawing.Point(118, 101)
+        Me.Kod_S.Location = New System.Drawing.Point(118, 94)
         Me.Kod_S.MaxLength = 6
         Me.Kod_S.Name = "Kod_S"
         Me.Kod_S.Size = New System.Drawing.Size(69, 20)
@@ -229,14 +250,14 @@ Partial Class Form4
         '
         'Adres_S
         '
-        Me.Adres_S.Location = New System.Drawing.Point(118, 75)
+        Me.Adres_S.Location = New System.Drawing.Point(118, 68)
         Me.Adres_S.Name = "Adres_S"
         Me.Adres_S.Size = New System.Drawing.Size(229, 20)
         Me.Adres_S.TabIndex = 1
         '
         'Nazwa_S
         '
-        Me.Nazwa_S.Location = New System.Drawing.Point(118, 26)
+        Me.Nazwa_S.Location = New System.Drawing.Point(118, 19)
         Me.Nazwa_S.Multiline = True
         Me.Nazwa_S.Name = "Nazwa_S"
         Me.Nazwa_S.Size = New System.Drawing.Size(229, 43)
@@ -284,4 +305,6 @@ Partial Class Form4
     Friend WithEvents Kod_S As TextBox
     Friend WithEvents Adres_S As TextBox
     Friend WithEvents Nazwa_S As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents nr_Rach_S As TextBox
 End Class

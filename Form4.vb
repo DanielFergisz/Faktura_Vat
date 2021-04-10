@@ -77,4 +77,17 @@
             e.Handled = ("0123456789".IndexOf(e.KeyChar) = -1)
         End If
     End Sub
+
+    Private Sub nr_Rach_S_TextChanged(sender As Object, e As EventArgs) Handles nr_Rach_S.TextChanged
+        Form2.Nr_konta.Text = nr_Rach_S.Text
+    End Sub
+    Private Sub nr_Rach_S_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles nr_Rach_S.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+
+            Else
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

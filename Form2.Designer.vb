@@ -131,7 +131,7 @@ Partial Class Form2
         Me.Data_D.Name = "Data_D"
         Me.Data_D.Size = New System.Drawing.Size(82, 20)
         Me.Data_D.TabIndex = 6
-        Me.Data_D.Value = New Date(2021, 4, 10, 0, 0, 0, 0)
+        Me.Data_D.Value = New Date(2021, 4, 11, 0, 0, 0, 0)
         '
         'Data_W
         '
@@ -140,7 +140,7 @@ Partial Class Form2
         Me.Data_W.Name = "Data_W"
         Me.Data_W.Size = New System.Drawing.Size(82, 20)
         Me.Data_W.TabIndex = 5
-        Me.Data_W.Value = New Date(2021, 4, 10, 0, 0, 0, 0)
+        Me.Data_W.Value = New Date(2021, 4, 11, 0, 0, 0, 0)
         '
         'Label3
         '
@@ -200,7 +200,7 @@ Partial Class Form2
         Me.GroupBox2.Size = New System.Drawing.Size(261, 167)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Kontrahent"
+        Me.GroupBox2.Text = "Nabywca"
         '
         'NIP
         '
@@ -303,12 +303,12 @@ Partial Class Form2
         '
         'Nr_konta
         '
+        Me.Nr_konta.Enabled = False
         Me.Nr_konta.Location = New System.Drawing.Point(13, 93)
         Me.Nr_konta.MaxLength = 26
         Me.Nr_konta.Name = "Nr_konta"
         Me.Nr_konta.Size = New System.Drawing.Size(181, 20)
         Me.Nr_konta.TabIndex = 5
-        Me.Nr_konta.Text = "12345678901234567890123456"
         '
         'Label10
         '
@@ -326,7 +326,7 @@ Partial Class Form2
         Me.Data_P.Name = "Data_P"
         Me.Data_P.Size = New System.Drawing.Size(89, 20)
         Me.Data_P.TabIndex = 3
-        Me.Data_P.Value = New Date(2021, 4, 10, 0, 0, 0, 0)
+        Me.Data_P.Value = New Date(2021, 4, 11, 0, 0, 0, 0)
         '
         'Label9
         '

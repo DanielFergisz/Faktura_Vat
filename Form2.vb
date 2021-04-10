@@ -133,6 +133,7 @@
             Rodzaj_Dok.Items.Remove("Faktura Detaliczna")
         End If
 
+        Nr_konta.Text = Form4.nr_Rach_S.Text
         Forma_platnosci.SelectedItem = "Gotówka"
         Rodzaj_Dok.SelectedItem = "Faktura VAT"
         Data_D.Value = DateTime.Now
