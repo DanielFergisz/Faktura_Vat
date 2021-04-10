@@ -50,4 +50,31 @@
     Private Sub Zamknij_U_Click(sender As Object, e As EventArgs) Handles Zamknij_U.Click
         Hide()
     End Sub
+
+    Private Sub NIP_S_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles NIP_S.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+
+            Else
+                e.Handled = True
+            End If
+        End If
+    End Sub
+    Private Sub Regon_S_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Regon_S.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) Then
+
+            Else
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Kod_S_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Kod_S.KeyPress
+        If e.KeyChar = "-"c Then
+            e.Handled = (CType(sender, TextBox).Text.IndexOf("-"c) <> -1)
+        ElseIf e.KeyChar <> ControlChars.Back Then
+            e.Handled = ("0123456789".IndexOf(e.KeyChar) = -1)
+        End If
+    End Sub
 End Class

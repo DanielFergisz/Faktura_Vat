@@ -179,6 +179,7 @@ Partial Class Form2
         'NR_Dok
         '
         Me.NR_Dok.Location = New System.Drawing.Point(60, 54)
+        Me.NR_Dok.MaxLength = 11
         Me.NR_Dok.Name = "NR_Dok"
         Me.NR_Dok.Size = New System.Drawing.Size(134, 20)
         Me.NR_Dok.TabIndex = 0
@@ -285,7 +286,7 @@ Partial Class Form2
         Me.GroupBox3.Controls.Add(Me.Forma_platnosci)
         Me.GroupBox3.Location = New System.Drawing.Point(485, 12)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(200, 144)
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 167)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Płatność"
@@ -293,7 +294,7 @@ Partial Class Form2
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(115, 121)
+        Me.CheckBox1.Location = New System.Drawing.Point(115, 130)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(79, 17)
         Me.CheckBox1.TabIndex = 6
@@ -321,9 +322,9 @@ Partial Class Form2
         'Data_P
         '
         Me.Data_P.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.Data_P.Location = New System.Drawing.Point(101, 45)
+        Me.Data_P.Location = New System.Drawing.Point(105, 45)
         Me.Data_P.Name = "Data_P"
-        Me.Data_P.Size = New System.Drawing.Size(93, 20)
+        Me.Data_P.Size = New System.Drawing.Size(89, 20)
         Me.Data_P.TabIndex = 3
         Me.Data_P.Value = New Date(2021, 4, 10, 0, 0, 0, 0)
         '
@@ -351,9 +352,9 @@ Partial Class Form2
         Me.Forma_platnosci.FormattingEnabled = True
         Me.Forma_platnosci.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Forma_platnosci.Items.AddRange(New Object() {"Gotówka", "Karta", "Pobranie", "Przelew"})
-        Me.Forma_platnosci.Location = New System.Drawing.Point(101, 18)
+        Me.Forma_platnosci.Location = New System.Drawing.Point(105, 18)
         Me.Forma_platnosci.Name = "Forma_platnosci"
-        Me.Forma_platnosci.Size = New System.Drawing.Size(93, 21)
+        Me.Forma_platnosci.Size = New System.Drawing.Size(89, 21)
         Me.Forma_platnosci.TabIndex = 0
         '
         'Button1
