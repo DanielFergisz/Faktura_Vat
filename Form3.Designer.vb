@@ -23,11 +23,11 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Ilosc_C = New System.Windows.Forms.ComboBox()
         Me.C_brutto = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.vat = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Ilosc = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.C_netto = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -40,11 +40,11 @@ Partial Class Form3
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Ilosc_C)
         Me.GroupBox1.Controls.Add(Me.C_brutto)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.vat)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Ilosc)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.C_netto)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -54,6 +54,16 @@ Partial Class Form3
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Parametry sprzedaży"
+        '
+        'Ilosc_C
+        '
+        Me.Ilosc_C.FormattingEnabled = True
+        Me.Ilosc_C.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
+        Me.Ilosc_C.Location = New System.Drawing.Point(105, 50)
+        Me.Ilosc_C.Name = "Ilosc_C"
+        Me.Ilosc_C.Size = New System.Drawing.Size(109, 21)
+        Me.Ilosc_C.TabIndex = 4
+        Me.Ilosc_C.Text = "1"
         '
         'C_brutto
         '
@@ -91,14 +101,6 @@ Partial Class Form3
         Me.Label4.Size = New System.Drawing.Size(48, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "VAT [%]:"
-        '
-        'Ilosc
-        '
-        Me.Ilosc.Location = New System.Drawing.Point(105, 50)
-        Me.Ilosc.Name = "Ilosc"
-        Me.Ilosc.Size = New System.Drawing.Size(109, 20)
-        Me.Ilosc.TabIndex = 3
-        Me.Ilosc.Text = "1"
         '
         'Label3
         '
@@ -190,10 +192,10 @@ Partial Class Form3
     Friend WithEvents Anuluj As Button
     Friend WithEvents vat As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Ilosc As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents C_netto As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents C_brutto As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Ilosc_C As ComboBox
 End Class
